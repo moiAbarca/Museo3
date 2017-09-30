@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moi.museo3.PantallaEntrada">
+
+    <Button
+        android:id="@+id/btnExposiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exposiciones"
+        android:onClick="Exposiciones"
+        app:layout_constraintRight_toRightOf="@+id/btnMantendorMuseos"
+        app:layout_constraintLeft_toLeftOf="@+id/btnMantendorMuseos"
+        app:layout_constraintTop_toBottomOf="@+id/btnMantendorMuseos"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/btnMantendorMuseos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantendor Museos"
+        android:onClick="MantenedorMuseos"
+        app:layout_constraintRight_toRightOf="@+id/btnMantenedorUsuario"
+        app:layout_constraintLeft_toLeftOf="@+id/btnMantenedorUsuario"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnMantenedorUsuario"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnReportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reportes"
+        android:onClick="Reportes"
+        app:layout_constraintRight_toRightOf="@+id/btnExposiciones"
+        app:layout_constraintLeft_toLeftOf="@+id/btnExposiciones"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnExposiciones"
+        app:layout_constraintHorizontal_bias="0.464" />
+
+    <Button
+        android:id="@+id/btnMantenedorUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantenedor Usuario"
+        android:onClick="MantenedorUsuario"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="76dp" />
+
+</android.support.constraint.ConstraintLayout>
